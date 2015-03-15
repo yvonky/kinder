@@ -50,3 +50,14 @@ form{
 	margin-bottom: 0px;
 	text-align: left;
 }
+
+.input-group[class*="col-"] {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.separate{
+	margin-top: 40px;
+}

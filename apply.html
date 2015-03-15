@@ -77,25 +77,29 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputEmail1" class="col-sm-2 control-label">身高</label>
-							<div class="col-sm-2">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="如：165">
+							<div>
+								<label for="inputEmail1" class="col-sm-2 control-label">身高</label>
+								<div class="col-sm-3 input-group">
+									<input type="email" class="form-control" id="inputEmail3" placeholder="如：165">
+									<div for="inputEmail1" class="input-group-addon">CM</div>
+								</div>
 							</div>
-							<label for="inputEmail1" class="col-sm-1 control-unit">CM</label>
-							<label for="inputEmail1" class="col-sm-2 control-label">体重</label>
-							<div class="col-sm-2">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="如：165">
+							<div>
+								<label for="inputEmail3" class="col-sm-2 control-label">体重</label>
+								<div class="col-sm-3 input-group">
+									<input type="email" class="form-control" id="inputEmail3" placeholder="如：165">
+									<div for="inputEmail1" class="input-group-addon">KG</div>
+								</div>
 							</div>
-							<label for="inputEmail1" class="col-sm-1 control-unit">KG</label>
 						</div>					
-						<div class="form-group">
+						<div class="form-group separate">
 							<label for="inputEmail1" class="col-sm-4 control-label">日常进行体育锻炼的频率</label>
 							<div class="col-sm-2">
 								<input type="email" class="form-control" id="inputEmail3" placeholder="">
 							</div>
 							<label for="inputEmail1" class="col-sm-2 control-unit">次/周</label>
 						</div>
-						<div class="form-group">
+						<div class="form-group separate">
 							<label for="inputEmail1" class="col-sm-3 control-label">既往重大疾病史</label>
 							<div class="col-sm-2 btn-group" data-toggle="buttons">
 								<label class="radio-inline">
@@ -180,9 +184,9 @@
 								</label>
 							</div>
 						</div>
-						<p class="text-danger">*此次活动将为每位参加者提供个人意外险一份，保险费用由活动方承担。</p>
+						<p class="text-danger separate">*此次活动将为每位参加者提供个人意外险一份，保险费用由活动方承担。</p>
 						<p class="text-danger">*如遇极端天气等非抗力情况，活动时间、地点可能会进行调整，主办方将提前通知入围学员。</p>
-						<div class="form-group">
+						<div class="form-group separate">
 							<label for="inputEmail3" class="col-sm-2 control-label">家长姓名</label>
 							<div class="col-sm-3">
 								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
@@ -203,9 +207,6 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<a class="col-sm-2" href="#" data-toggle="modal" data-target="#myModal">
-							  监护人声明
-							</a>
 							<div class="checkbox col-sm-4">
 								<label>
 									<input type="checkbox"> 我已阅读《监护人声明》
@@ -213,27 +214,32 @@
 							</div>
 						</div>
 						<!-- Modal -->
-						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						  <div class="modal-dialog">
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-						      </div>
-						      <div class="modal-body">
-						        ...
-						      </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        <button type="button" class="btn btn-primary">Save changes</button>
-						      </div>
-						    </div>
-						  </div>
-						</div>
+						
 					</form>
 				</div>
 			</div>
 			<button type="button" class="btn btn-success center-block">下一页</button>
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
 		</div>
 	</div>
 
@@ -244,11 +250,10 @@
 			</div>
 		</div>
 	</footer>
+
 </body>
 </html>
 
 <script>
-	$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-  })
+$('#myModal').modal('toggle')
 </script>
