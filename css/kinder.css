@@ -3,6 +3,13 @@ body{
 	color: #FFF;
 }
 
+h1{
+	text-align: center;
+	font-size: 2em;
+}
+h2{
+	font-size: 1.4em;
+}
 header{
 	text-align: center;
 	height: 280px;
@@ -12,7 +19,34 @@ header img{
 	height: 100%;
 }
 
-h1{
-	text-align: center;
+footer{
+	margin-top: 20px;
+	border-top:2px solid #FFF;
+	padding: 10px;
 }
 
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+	.dl-horizontal dt {
+		width: 80px;
+		text-align: left;
+	}
+	.dl-horizontal dd {
+		margin-left: 80px
+	}
+}
+
+form{
+	color: #555;
+}
+
+.control-unit{
+	padding-top: 7px;
+	margin-bottom: 0px;
+	text-align: left;
+}
