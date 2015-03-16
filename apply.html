@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>2015“健达+运动”广州儿童足球训练营</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/kinder.css">
 	<script src="js/jquery.min.js"></script>
@@ -11,7 +12,7 @@
 </head>
 <body>
 	<header>
-		<img src="img/banner_kinder_sport.png" alt="">
+		<img src="img/" alt="">
 	</header>
 
 	<div class="container">
@@ -24,47 +25,62 @@
 				<div class="panel-body">
 					<form class="form-horizontal">
 						<div class="form-group">
-							<label for="inputEmail1" class="col-sm-2 control-label">姓名</label>
+							<label for="entrantname" class="col-sm-2 control-label">姓名</label>
 							<div class="col-sm-3">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+								<input type="text" class="form-control" id="entrantname" placeholder="输入姓名">
 							</div>
-							<label for="inputEmail1" class="col-sm-2 control-label">性别</label>
-							<div class="col-sm-3 btn-group" data-toggle="buttons">
+							<label for="sex" class="col-sm-2 control-label">性别</label>
+							<div class="col-sm-3 btn-group">
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 男
+									<input type="radio" name="sex" id="male" value="男"> 男
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 女
+									<input type="radio" name="sex" id="female" value="女"> 女
 								</label>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputEmail2" class="col-sm-2 control-label">年龄</label>
+							<label for="age" class="col-sm-2 control-label">年龄</label>
 							<div class="col-sm-3">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+								<select class="form-control">
+									<option>7岁</option>
+									<option>8岁</option>
+									<option>9岁</option>
+									<option>10岁</option>
+									<option>11岁</option>
+									<option>12岁</option>
+									<option>13岁</option>
+								</select>
 							</div>
-							<label for="inputEmail1" class="col-sm-2 control-label">身份证号</label>
+							<label for="idnumber" class="col-sm-2 control-label">身份证号</label>
 							<div class="col-sm-5">
-								<input type="email" class="form-control" id="inputEmail6" placeholder="输入18位身份证号">
+								<input type="text" class="form-control" id="idnumber" placeholder="输入18位身份证号">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">联系电话</label>
 							<div class="col-sm-3">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+								<input type="text" class="form-control" id="inputEmail3" placeholder="格式:020-1234678">
 							</div>
 							<label for="inputEmail3" class="col-sm-2 control-label">就读学校</label>
-							<div class="col-sm-4">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="inputEmail3" placeholder="输入学校名称">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputEmail1" class="col-sm-2 control-label">年级</label>
 							<div class="col-sm-3">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+								<select class="form-control">
+									<option>1年级</option>
+									<option>2年级</option>
+									<option>3年级</option>
+									<option>4年级</option>
+									<option>5年级</option>
+									<option>6年级</option>
+								</select>
 							</div>
 							<label for="inputEmail1" class="col-sm-2 control-label">服装尺寸</label>
-							<div class="col-sm-3 btn-group" data-toggle="buttons">
+							<div class="col-sm-3 btn-group">
 								<label class="radio-inline">
 									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> S
 								</label>
@@ -80,110 +96,141 @@
 							<div>
 								<label for="inputEmail1" class="col-sm-2 control-label">身高</label>
 								<div class="col-sm-3 input-group">
-									<input type="email" class="form-control" id="inputEmail3" placeholder="如：165">
+									<input type="email" class="form-control" id="inputEmail3" placeholder="格式：125">
 									<div for="inputEmail1" class="input-group-addon">CM</div>
 								</div>
 							</div>
 							<div>
 								<label for="inputEmail3" class="col-sm-2 control-label">体重</label>
 								<div class="col-sm-3 input-group">
-									<input type="email" class="form-control" id="inputEmail3" placeholder="如：165">
+									<input type="email" class="form-control" id="inputEmail3" placeholder="格式：40">
 									<div for="inputEmail1" class="input-group-addon">KG</div>
 								</div>
 							</div>
 						</div>					
 						<div class="form-group separate">
 							<label for="inputEmail1" class="col-sm-4 control-label">日常进行体育锻炼的频率</label>
-							<div class="col-sm-2">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="">
+							<div class="col-sm-3 input-group">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="格式：3">
+								<div for="inputEmail1" class="input-group-addon">次/周</div>
 							</div>
-							<label for="inputEmail1" class="col-sm-2 control-unit">次/周</label>
 						</div>
 						<div class="form-group separate">
 							<label for="inputEmail1" class="col-sm-3 control-label">既往重大疾病史</label>
-							<div class="col-sm-2 btn-group" data-toggle="buttons">
+							<div class="col-sm-2 btn-group">
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+									<input type="radio" name="pathography" id="pathography1" value="是"> 是
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+									<input type="radio" name="pathography" id="pathography2" value="否"> 否
 								</label>
 							</div>
 							<label for="inputEmail1" class="col-sm-2 control-label">详述（选填）</label>
 							<div class="col-sm-5">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+								<input type="email" class="form-control" id="pathography3" placeholder="">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputEmail1" class="col-sm-3 control-label">既往外伤史</label>
-							<div class="col-sm-2 btn-group" data-toggle="buttons">
+							<div class="col-sm-2 btn-group">
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+									<input type="radio" name="traumatism" id="traumatism1" value="是"> 是
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+									<input type="radio" name="traumatism" id="traumatism2" value="否"> 否
 								</label>
 							</div>
 							<label for="inputEmail1" class="col-sm-2 control-label">详述（选填）</label>
 							<div class="col-sm-5">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+								<input type="email" class="form-control" id="traumatism3" placeholder="">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputEmail1" class="col-sm-3 control-label">既往手术史</label>
-							<div class="col-sm-2 btn-group" data-toggle="buttons">
+							<div class="col-sm-2 btn-group">
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+									<input type="radio" name="operation" id="operation1" value="是"> 是
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+									<input type="radio" name="operation" id="operation2" value="否"> 否
 								</label>
 							</div>
 							<label for="inputEmail1" class="col-sm-2 control-label">详述（选填）</label>
 							<div class="col-sm-5">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+								<input type="email" class="form-control" id="operation3" placeholder="">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputEmail1" class="col-sm-3 control-label">体质状况</label>
-							<div class="col-sm-4 btn-group" data-toggle="buttons">
+							<div class="col-sm-4 btn-group">
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 优秀
+									<input type="radio" name="physique" id="physique1" value="优秀"> 优秀
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 较好
+									<input type="radio" name="physique" id="physique2" value="较好"> 较好
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 较弱
+									<input type="radio" name="physique" id="physique3" value="较弱"> 较弱
 								</label>
 							</div>
 							<label for="inputEmail1" class="col-sm-2 control-label">详述（选填）</label>
 							<div class="col-sm-3">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
+								<input type="email" class="form-control" id="physique4" placeholder="">
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group longword">
 							<label for="inputEmail1" class="col-sm-5 control-label">能否正常参加体能锻炼的课程</label>
-							<div class="col-sm-4 btn-group" data-toggle="buttons">
+							<div class="col-sm-4 btn-group">
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+									<input type="radio" name="physicalexercise" id="physicalexercise1" value="是"> 是
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+									<input type="radio" name="physicalexercise" id="physicalexercise2" value="否"> 否
 								</label>
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group longword">
 							<label for="inputEmail1" class="col-sm-5 control-label">能否正常参加竞技类剧烈体育活动</label>
-							<div class="col-sm-4 btn-group" data-toggle="buttons">
+							<div class="col-sm-4 btn-group">
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+									<input type="radio" name="strenuousexercise" id="strenuousexercise1" value="是"> 是
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+									<input type="radio" name="strenuousexercise" id="strenuousexercise2" value="否"> 否
 								</label>
 							</div>
 						</div>
+						<div class="form-group longword">
+							<label for="inputEmail1" class="col-sm-3 control-label">是否有足球训练基础</label>
+							<div class="col-sm-9 btn-group">
+								<label class="radio-inline">
+									<input type="radio" name="training" id="training1" value="无">无
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="training" id="training2" value="有半年到一年基础">有半年到一年基础
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="training" id="training3" value="有一到两年基础">有一到两年基础
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="training" id="training4" value="有两到三年基础">有两到三年基础
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="training" id="training5" value="有三年以上基础">有三年以上基础
+								</label>																							
+							</div>
+						</div>
+						<div class="form-group longword">
+							<label for="inputEmail1" class="col-sm-8 control-label">是否在2014年5月参加过 “健达+运动”广州儿童足球启蒙训练营</label>
+							<div class="col-sm-4 btn-group">
+								<label class="radio-inline">
+									<input type="radio" name="joinbefore" id="joinbefore1" value="是"> 是
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="joinbefore" id="joinbefore2" value="否"> 否
+								</label>
+							</div>
+						</div>											
 						<p class="text-danger separate">*此次活动将为每位参加者提供个人意外险一份，保险费用由活动方承担。</p>
 						<p class="text-danger">*如遇极端天气等非抗力情况，活动时间、地点可能会进行调整，主办方将提前通知入围学员。</p>
 						<div class="form-group separate">
@@ -206,17 +253,43 @@
 								<input type="email" class="form-control" id="inputEmail3" placeholder="输入姓名">
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="checkbox col-sm-4">
+						<div class="form-group col-sm-12">
+							<div class="checkbox">
 								<label>
-									<input type="checkbox"> 我已阅读《监护人声明》
+									<input type="checkbox"> 我已阅读并同意
 								</label>
+								<a href="" data-toggle="modal" data-target="#myModal"><strong>《监护人声明》</strong></a>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
-			<button type="button" class="btn btn-success center-block">下一页</button>
+			<a class="btn btn-lg btn-block btn-info center-block separate" href="apply.html">提交申请</a>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">监护人声明</h4>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li>本人声明本以上所填写的资料均属真实，并无隐瞒须填报或提供令人误解的资料，本人明白若作虚假、不确实、不真实或使用欺诈手段的声明，将被拒绝参加本活动；</li>
+						<li>本人已详细阅读及本活动须知，并同意敝子女参加2015“健达+运动”广州儿童足球训练营，同时也证明其身体状况良好，能适应本活动的训练及比赛。本人也明白敝子女参加训练及比赛期间或往返途中，如发生任何意外主办方概不负责；</li>
+						<li>本人同意主办方以本人子女为被保险人投保人身意外险，具体内容已从保险说明书中知晓，本人予以认可；</li>
+						<li>本人许可主办方对于活动期间拍摄的本人子女肖像（包含照片及动态影像）享有永久使用权，并同意主办方将原始作品根据商业用途进行合理的改动和加工，用于出版、新闻、广告等法律许可的用途；</li>
+						<li>如遇极端天气等非抗力情况发生，主办方有权临时取消或推迟训练营活动；</li>
+						<li>本人已认真阅读并全面理解以上内容，且对上述所有内容予以确认并承担相应的法律责任。</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -230,7 +303,3 @@
 
 </body>
 </html>
-
-<script>
-$('#myModal').modal('toggle')
-</script>
