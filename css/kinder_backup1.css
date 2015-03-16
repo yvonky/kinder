@@ -1,7 +1,5 @@
 body{
-	background-image:url(../img/bg.png);
-	background-repeat: no-repeat;
-	background-size:100% auto;
+	background-color: rgb(35,126,196);
 	color: #FFF;
 }
 
@@ -12,7 +10,7 @@ h1{
 h2{
 	font-size: 1.4em;
 }
-.panel-body{color: rgb(35,126,196);}
+
 .focus{
 	font-size: 1.2em;
 }
@@ -31,9 +29,8 @@ footer{
 }
 
 .main{
-	background-color: rgba(35,126,196,0.8);
 	border: 1px #FFF solid;
-	border-radius: 6px;
+	border-radius: 4px;
 	padding-bottom: 20px;
 	margin-bottom: 10px;
 }
